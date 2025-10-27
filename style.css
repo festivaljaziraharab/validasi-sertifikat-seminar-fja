@@ -1,0 +1,160 @@
+/* General Reset and Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #580c11;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 30px 20px;
+  /* PERUBAHAN DI SINI: Menggunakan Montserrat */
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Outer Container (Bingkai Merah) */
+.outer-container {
+  width: 100%;
+  max-width: 850px;
+  padding: 10px;
+  border: 15px solid #f8edd1;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  background-color: #f8edd1;
+}
+
+/* Certificate Container (Bagian dalam Putih) */
+.certificate-container {
+  padding: 40px;
+}
+
+/* Header Styling (Logo Group) */
+.header {
+  text-align: center;
+  margin-bottom: 20px; /* Jarak bawah dikurangi */
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.actual-logo-group {
+  max-width: 40%; /* Ukuran logo disesuaikan */
+  height: auto;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+/* --- GAMBAR KONTEN UTAMA (Judul & Narasumber) --- */
+.main-content-image-wrapper {
+  text-align: center;
+  margin: 20px auto 30px auto; /* Memberi jarak ke tabel data di bawah */
+  padding: 0;
+  width: 100%;
+}
+
+.main-content-image {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+/* ------------------------------------------------ */
+
+/* Detail Section (Tabel Data) */
+.detail-section {
+  margin-top: 30px;
+  font-size: 1.05em;
+}
+
+.detail-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.detail-section th,
+.detail-section td {
+  padding: 5px 0;
+  text-align: left;
+}
+
+.detail-section th {
+  width: 25%;
+  font-weight: bold;
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+/* Penekanan pada Tema Acara */
+.emphasis {
+  font-style: italic;
+}
+
+/* Status Validasi */
+.valid-status {
+  font-weight: bold;
+  color: green;
+}
+
+/* Footer Note */
+.footer-note {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.footer-note p {
+  font-size: 0.9em;
+  color: #8b0000;
+  text-align: left;
+  font-style: italic;
+}
+
+/* --- MULAI DARI SINI --- */
+
+/* Responsiveness (Media Query untuk Layar Kecil/Ponsel) */
+@media (max-width: 650px) {
+    
+    /* OUTER CONTAINER */
+    .outer-container {
+        max-width: 95%; 
+        padding: 5px;
+        border: 10px solid #f8edd1;
+    }
+
+    /* CERTIFICATE CONTAINER (Area Konten) */
+    .certificate-container {
+        padding: 20px; 
+    }
+    
+    /* LOGO GROUP */
+    .actual-logo-group {
+        max-width: 65%; 
+    }
+    
+    /* KONTEN UTAMA IMAGE */
+    .main-content-image {
+        max-width: 98%; 
+    }
+    
+    /* DETAIL SECTION (Tabel Data) */
+    .detail-section {
+        font-size: 0.95em;
+    }
+
+    .detail-section th {
+        width: 35%;
+        padding-right: 5px;
+    }
+}
+
+/* --- HINGGA AKHIR FILE DI SINI --- */
