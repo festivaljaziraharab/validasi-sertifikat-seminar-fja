@@ -12,7 +12,7 @@
 /* 2. Gambar Habiburrahman (Kelas: main-content-image) */
 .main-content-image {
     /* Ukuran GAMBAR SEMINAR BESAR (misalnya 95% dari lebar container) */
-    max-width: 95%; 
+    max-width: 65%; 
     height: auto;
     display: block; 
     margin: 0 auto 30px auto; 
@@ -40,3 +40,4 @@
 
 /* --- Kode CSS Lainnya Tetap Sama --- */
 /* (Anda bisa menyalin semua kode CSS final yang saya berikan sebelumnya dan hanya pastikan dua bagian di atas sudah benar nilainya) */
+
