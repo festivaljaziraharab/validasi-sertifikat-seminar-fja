@@ -65,7 +65,7 @@ body {
 
 /* 2. Gambar Habiburrahman (Dibesarkan) */
 .main-content-image {
-    max-width: 75%; /* Ukuran gambar seminar/narasumber (dibesarkan) */
+    max-width: 100%; /* Ukuran gambar seminar/narasumber (dibesarkan) */
     height: auto;
     display: block; 
     margin: 0 auto 30px auto; 
@@ -171,4 +171,5 @@ body {
     line-height: 1.3; 
     white-space: normal;
 }
+
 
