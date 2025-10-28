@@ -31,7 +31,7 @@ body {
 
 /* Certificate Container (Area Konten) */
 .certificate-container {
-    padding: 15px; 
+    padding: 10px; 
 }
 
 /* Header Styling: Logo Group */
@@ -138,3 +138,4 @@ body {
     line-height: 1.3; 
     white-space: normal; /* Catatan kaki boleh pindah baris */
 }
+
