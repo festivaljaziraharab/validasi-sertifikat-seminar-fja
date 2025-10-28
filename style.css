@@ -34,7 +34,8 @@ body {
     padding: 10px; 
 }
 
-/* Header Styling: Logo Group */
+/* --- HEADER / GAMBAR (Perbaikan Ukuran) --- */
+
 .header {
     text-align: center;
     margin-bottom: 15px;
@@ -46,8 +47,9 @@ body {
     margin-bottom: 0;
 }
 
+/* 1. Logo Group (Mengecilkan logo.png) */
 .actual-logo-group {
-    max-width: 60%; 
+    max-width: 50%; 
     height: auto;
     border: none;
     padding: 0;
@@ -62,66 +64,90 @@ body {
     width: 100%;
 }
 
+/* 2. Gambar Habiburrahman (Dibesarkan) */
 .main-content-image {
-    max-width: 95%; 
+    max-width: 100%; 
     height: auto;
     display: block; 
     margin: 0 auto; 
 }
 
-/* Detail Section (Data seperti tabel) */
+
+/* --- DETAIL SECTION (Perbaikan Tata Letak) --- */
+
 .detail-section {
     margin-top: 20px;
     font-size: 0.85em; 
     line-height: 1.3;
 }
 
-/* Menggunakan Flexbox untuk baris data (<p>) */
+/* Membuat setiap baris data (<p>) menggunakan Flexbox */
 .detail-section p {
     display: flex; 
     margin-bottom: 5px; 
-    align-items: flex-start; /* Pastikan semua baris data sejajar atas */
-    white-space: normal; /* **PENTING: Membatalkan white-space: nowrap; lama** */
-    overflow: visible; /* **PENTING: Membatalkan overflow: hidden; lama** */
+    align-items: flex-start; 
+    line-height: 1.3; 
+    white-space: normal;
+    overflow: visible;
 }
 
-/* Label (Nama, Peran, dll.) */
+/* Kolom Label (Nama, Peran, dll.) */
 .detail-section .data-label {
     font-weight: bold; 
-    width: 35%; /* Mengatur lebar persentase agar lebih responsif */
+    width: 35%; 
+    text-align: left;
     flex-shrink: 0; 
 }
 
-/* Pemisah (:) */
+/* Kolom Pemisah (Titik Dua) */
 .detail-section .data-separator {
-    flex-shrink: 0;
-    width: 5%; /* Mengatur lebar kecil untuk titik dua */
+    width: 5%; 
     text-align: center;
+    flex-shrink: 0;
 }
 
-/* Nilai Data */
+/* Kolom Nilai */
 .detail-section .data-value {
-    width: 60%; /* Mengisi sisa ruang */
+    width: 60%; 
+    text-align: left;
     flex-grow: 1; 
 }
 
 
-/* --- PENYESUAIAN KHUSUS --- */
+/* --- PERBAIKAN SPESIFIK --- */
 
-/* 1. Nomor Sertifikat (Dikecilkan font-nya) */
+/* 3. Nomor Sertifikat (Rata Tengah & Font Disesuaikan) */
+
+/* Menargetkan baris Nomor Sertifikat untuk Rata Tengah */
+.detail-section p:first-child { 
+    justify-content: center; 
+    text-align: center;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+/* Sembunyikan Label & Pemisah pada baris Nomor Sertifikat */
+.detail-section p:first-child .data-label,
+.detail-section p:first-child .data-separator {
+    display: none; 
+}
+
+/* Atur style teks Nomor Sertifikat */
 #no-sertifikat {
-    font-size: 0.75em; /* Dikecilkan lagi */
-    word-break: break-all; /* Memungkinkan pemotongan di manapun */
-    font-weight: normal !important;
+    font-size: 0.85em; /* Disesuaikan sedikit lebih besar */
+    word-break: break-all; 
+    font-weight: bold;
+    width: auto; /* Membiarkan teks mengambil lebar alami saat di tengah */
+    flex-grow: 0;
 }
 
-/* 2. Nama Penerima (Bisa 2 baris jika panjang) */
+/* 4. Nama Peserta (Memastikan bisa turun baris) */
 #nama-peserta {
-    word-wrap: break-word; /* **SOLUSI: Memastikan teks panjang turun baris** */
-    white-space: normal; /* **SOLUSI: Mengizinkan teks turun baris** */
+    word-wrap: break-word; 
+    white-space: normal;
 }
 
-/* 3. Penyesuaian Warna dan Bold */
+/* Warna dan Bold Status/Nama */
 .penerima-valid {
     color: green;
     font-weight: bold; 
@@ -132,10 +158,9 @@ body {
     font-weight: bold;
 }
 
-/* ------------------------------------- */
 
+/* --- Catatan Kaki --- */
 
-/* Catatan Kaki */
 .footer-note {
     margin-top: 20px;
     padding-top: 10px;
