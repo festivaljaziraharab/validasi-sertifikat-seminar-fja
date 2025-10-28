@@ -1246,5 +1246,45 @@
         "peran": "Peserta",
         "tgl_terbit": "Kamis, 6 November 2025",
         "status": "VALID"
+    },
+    {
+        "id": "157",
+        "no_sertifikat": "Un.03.639.SB.605/PAN-FJA.HMPS-BSA/XVIII.10.2025",
+        "nama": "MUHAMMAD IHSAN",
+        "peran": "Peserta",
+        "tgl_terbit": "Kamis, 6 November 2025",
+        "status": "VALID"
+    },
+    {
+        "id": "158",
+        "no_sertifikat": "Un.03.639.SB.605/PAN-FJA.HMPS-BSA/XVIII.10.2025",
+        "nama": "MUTAWAQIL ALLALLAH SULAIMAN",
+        "peran": "Peserta",
+        "tgl_terbit": "Kamis, 6 November 2025",
+        "status": "VALID"
+    },
+    {
+        "id": "159",
+        "no_sertifikat": "Un.03.639.SB.605/PAN-FJA.HMPS-BSA/XVIII.10.2025",
+        "nama": "SABILA IZZATI YUMADIYAH",
+        "peran": "Peserta",
+        "tgl_terbit": "Kamis, 6 November 2025",
+        "status": "VALID"
+    },
+    {
+        "id": "160",
+        "no_sertifikat": "Un.03.639.SB.605/PAN-FJA.HMPS-BSA/XVIII.10.2025",
+        "nama": "AHMAD FIRJAUN BALYA BARLAMAN",
+        "peran": "Peserta",
+        "tgl_terbit": "Kamis, 6 November 2025",
+        "status": "VALID"
+    },
+    {
+        "id": "161",
+        "no_sertifikat": "Un.03.639.SB.605/PAN-FJA.HMPS-BSA/XVIII.10.2025",
+        "nama": "SANA SADDA FAJWAYA",
+        "peran": "Peserta",
+        "tgl_terbit": "Kamis, 6 November 2025",
+        "status": "VALID"
     }
 ]
